@@ -1,0 +1,2 @@
+shift modify length after
+unshift modify length first
