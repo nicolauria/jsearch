@@ -1,5 +1,0 @@
-What is a Graph?
-
-G = (V, E)
-A Graph is an ADT used to store data. Graphs can be directed or undirected.
-Graphs can be weighted or unweighted.
