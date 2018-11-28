@@ -26,3 +26,44 @@ doesn't matter.
 We can use various algorithms with our graphs to accomplish different tasks.
 Web pages are directed graphs and web crawling is simply traversing this graph
 and storing the data for search results.
+
+We can have a self-loop where edges point to themselves. We can also have
+multi-edges (a flight network is an example). If a graph contains no
+self-loop or mutli-edges it's called a simple graph.
+
+With a simple directed graph, maximum number of edges is n(n -1). With
+an undirected graph (n(n-1)) / 2. Maximum number of edges with directed graph
+is close to n ^ 2.
+
+A graph is called dense if edges is close to maximum. Sparse is typically close
+to number of vertices. For storing data in memory we use adjacency matrix with
+dense graph and adjacency list with sparse graph.
+
+Path = sequence of vertices. Simple path = no vertices repeated. Simple path
+is also called walk. Trail = vertices repeated but not edges.
+
+Connected = directed graph where all vertices have path to other vertice.
+This is called strongly connected with directed graph.
+
+Closed walk = starts and ends at same vertex
+
+Space complexity of storing vertices and edges is (|V| + |E|).
+Time complexity of finding all nodes connected to one node = |E|
+Time complexity of finding if two nodes are connected = |E|
+
+Adjacency Matrix -> create hash table to store vertices
+- two dimensional array storing edge connections
+1) finding all edges of one vertice = BigO(V)
+2) finding whether two vertices are connected = BigO(1), constant lookup time
+* we have improved on time complexity but we are now using
+v2 memory.
+
+Adjacency List -> Space consumption is proportional to number of edges
+* most real word graphs are sparse
+1) finding if two nodes are connected is worst case BigO(V) but
+realistically this does not occur.
+2) same with finding adjacent nodes
+
+Adding new edges in a adjaceny list with an array would mean we have
+to create a new array every time but if use a linked list it is much
+faster.
