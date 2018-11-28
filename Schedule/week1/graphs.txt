@@ -1,7 +1,9 @@
-Arrays and linked-lists are linear data structures. Trees are non linear
+Arrays, linked-lists, stacks and queues are linear data structures. Trees are non linear
 data structures. Trees are nothing more than restricted types of graphs.
 Trees can only flow in one direction (from the root node to other leaf
 nodes or child nodes). A tree cannot have any loops or cyclical links.
+
+In a tree with n nodes. We must have n - 1 edges.
 
 There are no rules in the way one node is connected to another node in
 graphs. Edges, sometimes referred to as links can connect nodes in any
@@ -12,3 +14,15 @@ What is a Graph?
 G = (V, E)
 A Graph is an ADT used to store data. Graphs can be directed or undirected.
 Graphs can be weighted or unweighted.
+
+With directed edges we can only travel one way (from the origin to the
+destination). With an undirected edge the path we can travel goes both
+ways. Remember that unlike trees there is no heirarchy of nodes.
+
+We use parenthesis to define edges that are directed because order matters
+eg. (V1, V2). We use an object {V1, V2} to denote undirected where order
+doesn't matter.
+
+We can use various algorithms with our graphs to accomplish different tasks.
+Web pages are directed graphs and web crawling is simply traversing this graph
+and storing the data for search results.
