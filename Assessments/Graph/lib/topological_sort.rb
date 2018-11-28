@@ -2,31 +2,15 @@ require_relative 'graph'
 
 # Implementing topological sort using both Khan's and Tarian's algorithms
 
+# Khan's algorithms assumes we are using a Direct Acyclic Graph
+# Topological sort of a directed graph is a linear ordering of its vertices
+# such that for every directed edge uv, from vertex u to vertex v, u comes
+# before v in the ordering
+
 def topological_sort(vertices)
-  in_edge_counts = {}
-  queue = []
-
-  vertices.each do |v|
-    in_edge_counts[v] = v.in_edges.count
-    queue << v if v.in_edges.empty?
-  end
-
-  sorted_vertices = []
-  until queue.empty?
-    vertex = queue.shift
-    sorted_vertices << vertex
-
-    vertex.out_edges.each do |e|
-      to_vertex = e.to_vertex
-
-      in_edge_counts[to_vertex] -= 1
-      queue << to_vertex if in_edge_counts[to_vertex] == 0
-    end
-  end
-
-  return [] if sorted_vertices.count != vertices.count
-  sorted_vertices
+  
 end
+
 
 # def topological_sort(vertices)
 #   order = []

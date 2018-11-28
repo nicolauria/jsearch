@@ -1,5 +1,6 @@
 class Vertex
-  attr_reader :value, :in_edges, :out_edges
+  attr_reader :value
+  attr_accessor :in_edges, :out_edges
 
   def initialize(value)
     @value = value
@@ -8,7 +9,7 @@ class Vertex
 end
 
 class Edge
-  attr_reader :from_vertex, :to_vertex, :cost
+  attr_reader :cost, :from_vertex, :to_vertex
 
   def initialize(from_vertex, to_vertex, cost = 1)
     @from_vertex, @to_vertex, @cost = from_vertex, to_vertex, cost
@@ -18,7 +19,7 @@ class Edge
 
   def destroy!
     from_vertex.out_edges.delete(self)
-    to_vertex.in_edges.delete(self)
+    from_vertex.in_edges.delete(self)
     @from_vertex = @to_vertex = nil
   end
 end

@@ -1,0 +1,3 @@
+Hello! My name is Nico Lauria. I'm a software developer in the San Francisco, Bay Area. My skills include Javascript, React, Redux, Ruby, Rails, Node.js, MongoDB and SQL. I have experience building full-stack applications using OOP, MVC, and REST.
+
+I've looked over the job description for the software developer position with String and I'm confident I would be able to join your team and quickly start contributing. I welcome the opportunity to speak with someone on your team further about my qualifications.
