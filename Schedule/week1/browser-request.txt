@@ -1,0 +1,20 @@
+what happens when you enter google.com and press enter?
+
+we need an ip address
+1) check browser cache for matching url
+2) check os cache
+3) check router cache
+4) query the domain name servers of the isp
+
+we need to establish a connection
+1) the most common connection protocol is TCP
+2) client sends syn packet to server asking if it's open for new connections
+3) if the server has open ports it responds with an acknowledgement
+of the syn packet with a syn/ack packet.
+4) client receives syn/ack and responds with ack packet
+
+client then makes an http request
+
+server reads the request with some kind of request handler
+
+response (JSON, XML, HTML) sent back and read by browser
