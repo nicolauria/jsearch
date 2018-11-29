@@ -1,0 +1,24 @@
+there are 3 main processes for a react component
+
+mounting
+updating
+unmounting
+
+when the component is initially rendered it gets mounted onto the dom
+constructor()
+render()
+componentDidMount()
+- good spot to fetch data (ajax calls, etc.)
+
+getDerivedStateFromProps(nextProps, prevState)
+shouldComponentUpdate(nextProps, nextState)
+render()
+componentDidUpdate(prevProps, prevState)
+
+componentWillUnmount()
+
+these methods will be deprecated in React 17.0
+
+componentWillMount()
+componentWillUpdate()
+componentWillReceiveProps()
