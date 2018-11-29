@@ -1,0 +1,6 @@
+the V8 js runtime is actually single threaded. it can only handle one operation
+at a time. the browser however provides us with apis and an event loop.
+
+methods such as setTimeout are not part of JS source code, they are provided
+by the browser. these functions run separately, once finished they are
+moved to the task queue and when the call stack is empty they run.
