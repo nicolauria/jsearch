@@ -1,9 +1,7 @@
-function sample() {
-  let a = 20;
-  function foo() {
-    console.log(a);
-  }
-  foo();
+function repeatedString(s, n) {
+    let result = "";
+    while (result.length < n) {
+        result += s;
+    }
+    return result.slice(0, n).split('').filter(el => el === 'a').length;
 }
-
-console.log(sample());
