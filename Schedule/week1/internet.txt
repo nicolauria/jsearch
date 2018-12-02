@@ -6,3 +6,8 @@ which control what direction the information takes
 larger transfers of information (large image for example) may be
 separated into many smaller packets, these packets may take different paths
 and may arrive at slightly different times to the destination ip address
+
+having multiple paths makes the internet fault tolerant which means that if
+several routes are compromised everything still works
+
+TCP manages the sending and receiving of all data as packets
