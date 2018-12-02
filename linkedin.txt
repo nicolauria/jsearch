@@ -4,7 +4,7 @@ for (let i = 0; i < student_names.length; i++) {
   names.push(student_names[i].innerText);
 }
 
-let alumnNames = document.getElementsByClassName("org-alumni-profile-card__full-name-link");
+var alumnNames = document.getElementsByClassName("org-alumni-profile-card__full-name-link");
 for (let i = 0; i < alumnNames.length; i++) {
     if (names.includes(alumnNames[i].innerText)) {
         alumnNames[i].style.color = 'blue'

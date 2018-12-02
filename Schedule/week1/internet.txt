@@ -1,0 +1,8 @@
+we send information over the internet inside packets
+
+these packets have a destination and are sent via routers
+which control what direction the information takes
+
+larger transfers of information (large image for example) may be
+separated into many smaller packets, these packets may take different paths
+and may arrive at slightly different times to the destination ip address
