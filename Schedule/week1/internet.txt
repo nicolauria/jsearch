@@ -11,3 +11,10 @@ having multiple paths makes the internet fault tolerant which means that if
 several routes are compromised everything still works
 
 TCP manages the sending and receiving of all data as packets
+
+requesting a song for example -> packets arrive, tcp checks to make sure
+they are all there, then sends a success response back
+
+each missing packet is resent
+
+the more routers we add, the more reliable the internet becomes
