@@ -1,3 +1,11 @@
 Heaps are a type of tree that useful for priority queues. They are unique
 in that one very efficient way to implement them is with an array. They are
 especially useful for extracting a min/max value from a set of data.
+
+Heaps are just binary trees with two additional rules. They must be complete,
+meaning all levels must be filled except the last which must still be left to right.
+They must also have all their nodes in order:
+min-heap -> parent node less than or equal to child node
+max-heap -> parent node greater than or equal to child node
+
+when growing a heap we can only ever add a node to the left-most spot
