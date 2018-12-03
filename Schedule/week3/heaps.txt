@@ -9,3 +9,13 @@ min-heap -> parent node less than or equal to child node
 max-heap -> parent node greater than or equal to child node
 
 when growing a heap we can only ever add a node to the left-most spot
+we can then swap nodes so we are not violating our ordering property
+
+when removing an element, say the root, we take the bottom right most
+node and move it to the top then compare children and continue swapping with
+the larger node
+
+we can use an array to model a heap
+if parent = i
+left child = 2i + 1
+right child = 2i + 2
