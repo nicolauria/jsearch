@@ -19,3 +19,11 @@ we can use an array to model a heap
 if parent = i
 left child = 2i + 1
 right child = 2i + 2
+to determine parent of i = Math.floor(i - 1) / 2
+
+we store the data in array so it can be used with a queue
+in a priority queue, each node has a numerical value that represents
+the nodes priority
+
+finding the max value in binary heap is BigO(1)
+removing or adding is BigO(log n)
