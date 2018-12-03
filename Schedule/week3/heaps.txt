@@ -1,0 +1,3 @@
+Heaps are a type of tree that useful for priority queues. They are unique
+in that one very efficient way to implement them is with an array. They are
+especially useful for extracting a min/max value from a set of data.
