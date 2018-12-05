@@ -1,0 +1,27 @@
+there are 7 types in javascript
+null
+undefined
+boolean
+number
+object
+symbol
+string
+
+all of them are primitive except for object
+
+there are 6 falsy values
+"", 0, null, undefined, NaN, false
+
+function expressions are not hoisted
+const sampleFunc = () => {}
+
+function declarations are hoisted
+function sampleFunc() {}
+
+let allows you to declare variables that are limited in scope to the block
+const variables are also block scoped
+
+closure allows a function to access variables from its enclosing scope
+
+context refers to the value of this
+scope refers to the accessibility of variables
