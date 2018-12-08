@@ -1,4 +1,4 @@
-Heaps are a type of tree that useful for priority queues. They are unique
+Heaps are a type of tree that are useful for priority queues. They are unique
 in that one very efficient way to implement them is with an array. They are
 especially useful for extracting a min/max value from a set of data.
 
@@ -21,7 +21,7 @@ left child = 2i + 1
 right child = 2i + 2
 to determine parent of i = Math.floor(i - 1) / 2
 
-we store the data in array so it can be used with a queue
+we store the data in an array so it can be used with a queue
 in a priority queue, each node has a numerical value that represents
 the nodes priority
 

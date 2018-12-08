@@ -1,0 +1,41 @@
+$() can do 3 dif things
+-> turns element into jQuery object
+-> selects all elements with that tag, class, or id
+-> creates a new element
+
+prepend()
+append()
+before()
+after()
+
+each -> iterate through list
+addClass
+removeClass
+toggleClass
+attr("style", "background-color: green")
+css("color", "green")
+
+$ul.children()
+$ul.parent()
+$ul.siblings()
+$ul.children().attr("style", "background-color: green")
+
+just like the dom we can add/remove elements
+
+const $ul = $("ul");
+$ul.children().remove()
+
+const li = document.createElement("li");
+li.textContent = "sample text";
+$ul.append(li);
+
+const $li = $("<li></li>");
+// sets the textContent property
+$li.text(coolThings[i]);
+$li.attr("style", "background-color: green");
+$ul.append($li);
+
+jQuery.attr();
+jQuery.text();
+jQuery.val();
+-> all of these methods can be used as getters or setters

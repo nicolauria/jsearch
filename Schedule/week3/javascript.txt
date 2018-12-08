@@ -25,3 +25,6 @@ closure allows a function to access variables from its enclosing scope
 
 context refers to the value of this
 scope refers to the accessibility of variables
+
+The keyword this acts as a placeholder, and will refer to whichever
+object called that method when the method is actually used.

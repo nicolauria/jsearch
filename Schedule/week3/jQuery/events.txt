@@ -1,0 +1,16 @@
+instead of eventTarget#addEventListener we use jQuery#on(event, callback)
+jQuery#off(event, callback) or jQuery#off(event)
+
+click()
+dblclick()
+mouseenter()
+mouseleave()
+mousedown()
+mouseup()
+hover()
+foucus()
+blur()
+
+to run a function once the page has loaded:
+$(document).ready(function () {})
+shorthand -> $(() => {})

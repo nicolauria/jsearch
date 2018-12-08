@@ -27,8 +27,6 @@ applications using OOP, MVC, and REST.
 I've done some research on Nyansa and I'm intrigued by your
 Voyance software application. I've worked with in-house software
 applications that were riddled with bugs and inefficiencies and
-I strongly believe the marketplace for your products will only
-continue to grow over the next decade.
 
 After looking over the job description for the Software Developer
 position I'm confident that I would be able to join your
