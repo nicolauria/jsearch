@@ -1,0 +1,19 @@
+Hi Cortnie,
+
+My name is Nico Lauria. I'm a software developer in the San Francisco Bay Area.
+I have five years of experience developing websites and two years
+of experience developing web applications. My skills include Javascript,
+Node, React, Ruby, Rails, PostgreSQL and MongoDB. I'm comfortable
+buildings apps using OOP, MVC and REST.
+
+When it comes to testing, I have worked with Rspec and Jasmine. The majority
+of my experience has been building unit tests for Ruby classes and algorithms
+but I have also done integration and end-to-end tests as well.
+
+I'm comfortable building database schemas and using raw SQL to build the
+tables. I've also worked with ORM's such as Rails Active Record.
+
+I have a good understanding of data structures, algorithms and time and space complexity. I've looked at the job description for the Front-end Developer position with Venue Report and I'm confident I would be able to join your team and quickly start contributing.
+
+Cheers,
+Nico

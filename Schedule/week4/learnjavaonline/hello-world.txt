@@ -1,0 +1,18 @@
+In java every line of code that can actually run needs to be
+inside of a class.
+
+When we declare a public class (Main for example) we must declare it
+inside a file with the same name (Main.java).
+
+There are 8 primitive data types in Java:
+byte (number, 1byte)
+short (number, 2bytes)
+int (number, 4bytes)
+long (number, 8bytes)
+float (floating number, 4 bytes)
+double (floating number, 8bytes)
+char (a character, 2bytes)
+boolean (true or false, 1byte)
+
+Java is a strongly typed language which means variables need to be defined
+before we declare them.

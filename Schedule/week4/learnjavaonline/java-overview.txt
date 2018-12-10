@@ -1,0 +1,18 @@
+Java has been around for 23 years. One of the reasons the language is so
+popular is because it is platform independent. A machine just needs a Javascript
+Runtime Environment. Where as other languages such as C++ compile code into
+platform specific scripts.
+
+Java is fundamentally object-oriented. The code is so robust because Java
+objects contain no references to data external to themselves.
+
+Java is a static typed programming language. This means that type checking
+is done at compile time vs runtime. One of the advantages is that a lot of
+bugs can be detected during compile time.
+
+Better performance: type constraints offer more opportunities for
+compiler optimizations
+
+Can make working with relational databases easier.
+
+Debugging can be slower in some ways because of compiler.
