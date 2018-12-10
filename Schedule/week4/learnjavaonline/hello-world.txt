@@ -1,4 +1,4 @@
-In java every line of code that can actually run needs to be
+In Java every line of code that can actually run needs to be
 inside of a class.
 
 When we declare a public class (Main for example) we must declare it
