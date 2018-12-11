@@ -16,3 +16,7 @@ compiler optimizations
 Can make working with relational databases easier.
 
 Debugging can be slower in some ways because of compiler.
+
+The Java programming has 166 packages and thousands of classes. Many of
+these packages have to be imported. Java creates a bytecode file that
+which is essentially an object file for a virtual machine.

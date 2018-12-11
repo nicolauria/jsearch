@@ -1,0 +1,9 @@
+Arrays.copyOfRange(arr, startIdx, endIdx);
+-> method for slicing array, endIdx is exclusive;
+
+length();
+size();
+indexOf();
+charAt();
+substring(startIdx, endIdx);
+startsWith();
