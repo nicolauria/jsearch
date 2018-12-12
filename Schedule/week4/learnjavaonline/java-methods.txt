@@ -7,3 +7,13 @@ indexOf();
 charAt();
 substring(startIdx, endIdx);
 startsWith();
+==
+.equals() -> use with strings
+
+Math.abs()
+Math.min
+
+Map<String, String>, HashMap, TreeMap, LinkedHashMap
+get()
+put()
+containsKey()
