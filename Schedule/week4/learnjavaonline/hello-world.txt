@@ -14,8 +14,8 @@ double (floating number, 8bytes)
 char (a character, 2bytes)
 boolean (true or false, 1byte)
 
-Java is a strongly typed language which means variables need to be defined
-before we declare them.
+Java is a strongly typed language which means variables need to be
+defined before we declare them.
 
 String is a real data type;
 String s1 = new String("Who let the dogs out?");

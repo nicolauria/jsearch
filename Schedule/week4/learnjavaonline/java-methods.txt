@@ -16,10 +16,42 @@ Math.min
 Map is an interface, HashMap is an implementation of that interface
 -> generally better to use interface bc more flexible
 -> HashMap may have some more method options
-Map<String, String>, HashMap, TreeMap, LinkedHashMap
+Map<String, String> -> HashMap, TreeMap, LinkedHashMap
 get()
 put()
 containsKey()
 example declaration: Map<String, Integer> map = new HashMap();
 
-List, ArrayList, LinkedList
+List -> ArrayList, LinkedList
+
+char c = 'M';
+Character.toString(c);
+
+Arrays.asList("hello", "there");
+
+A stream is used to process a collection of objects
+List names = Arrays.asList("william", "henry", "joseph");
+List result = names.stream().map(x -> x * x).collect(Collectors.toList());
+filter();
+sorted();
+
+with a multi-line lambda you have to explicitly return
+-> just like javascript;
+
+converting a hash to keys or vals array
+List<string> result = new ArrayList(map.keySet());
+List<string> result = new ArrayList(map.values());
+
+List<String> myList =
+    Arrays.asList("a1", "a2", "b1", "c2", "c1");
+
+myList
+    .stream()
+    .filter(s -> s.startsWith("c"))
+    .map(String::toUpperCase)
+    .sorted()
+    .forEach(System.out::println);
+
+Join and Split methods...
+String joined = String.join(" ", array);
+String[] splitStr = joined.split(" ");
