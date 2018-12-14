@@ -55,3 +55,6 @@ myList
 Join and Split methods...
 String joined = String.join(" ", array);
 String[] splitStr = joined.split(" ");
+
+Need to construct new array list object
+List<Integer> numbers = new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5));
