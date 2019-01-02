@@ -1,4 +1,4 @@
-Hi Akshay,
+Hi Jim,
 
 My name is Nico Lauria. I'm a software developer in the San Francisco Bay Area.
 I have five years of experience developing websites and two years
@@ -14,9 +14,8 @@ I'm comfortable building database schemas and using raw SQL to build the
 tables. I've also worked with ORM's such as Rails Active Record.
 
 I have a good understanding of data structures, algorithms and time and
-space complexity. I've looked at the job description for the
-for the Junior Web Developer and I'm confident
-I would be able to join your team and quickly start contributing.
+space complexity. After looking at the job description for the
+for the Software Engineer position I feel I am qualified and might be a good addition to your team. I welcome the opportunity to speak with you further.
 
-Cheers,
+Best,
 Nico

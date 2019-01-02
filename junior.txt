@@ -1,0 +1,29 @@
+Hi Tiffany,
+
+My name is Nico Lauria. I'm a Junior Software Developer in the San Francisco
+Bay Area. I have three years of experience building websites and one year
+of experience building software applications. My skills include Javascript,
+Node, React, Ruby, Rails, MongoDB and PostgreSQL.
+
+I just graduated from one of the top programming schools in the San Francisco Area and I'm currently exploring new opportunities. I am hardworking, motivated, and I pick up new systems very quickly.
+
+I recently finished two full-stack projects that I feel showcase my skills.
+They can be viewed on my portfolio: nicolauria.com
+
+I've attached a copy of my resume. I would love the chance to speak
+with you more about my qualifications.
+
+Cheers,
+Nico
+
+Hi Karlin,
+
+I hope all is well. I'm a Junior Software Developer in the San Francisco
+Bay Area. I just graduated from one of the top programming schools in SF and I'm now exploring new opportunities.
+
+My portfolio: nicolauria.com
+
+I'd love to chat if you have any time.
+
+Cheers,
+Nico 
