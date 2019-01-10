@@ -5,7 +5,7 @@ module Searchable
 
     root.children.each do |child|
       search_res = dfs(child, target)
-      return search_res unless search_res.nil?
+      return search_res if search_res
     end
   end
 
