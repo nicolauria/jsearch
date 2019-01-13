@@ -1,14 +1,24 @@
-arrays have a fixed size
-linked lists have a dynamic size
+people say that linked-list has much better performance when it comes to
+random insertion and random deletion
 
-arrays are inefficient with regards to insertion and deletion
-linked lists are efficient
+this was once true in theory but the architecture of modern computers has changed
+cpu speeds are now significantly higher than ram access
+to account for this modern computers use a cache
+(the cache is much smaller than ram)
 
-arrays have random access (ie. index 5)
-linked lists do not
+because linked-lists do not store nodes in sequential memory, traversing a linked
+list can actually be longer than an array dues to cache miss.
 
-arrays may result in memory waste (when created can be large size)
-linked lists do not waste memory
+when we insert or delete in an array, all items have to be moved
+(reallocated in memory)
+with a linked list, we are simply changing our pointers
 
-arrays (sequential access is faster) - stored in contiguous memory
-sequential access is slow (not stored in contiguous memory)
+also arrays are of a fixed length and have to be resized
+linked-lists are dynamic as all we are doing is adding a new node and changing pointer
+
+ASID
+access, search, insertion, deletion
+Access: array -> O(1), linked-list -> O(n)
+Search: array -> O(n), linked-list -> O(n)
+Insertion: array -> O(n), linked-list -> O(1)
+Deletion: array -> O(n), linked-list -> O(1)
