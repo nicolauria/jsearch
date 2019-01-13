@@ -1,0 +1,14 @@
+arrays have a fixed size
+linked lists have a dynamic size
+
+arrays are inefficient with regards to insertion and deletion
+linked lists are efficient
+
+arrays have random access (ie. index 5)
+linked lists do not
+
+arrays may result in memory waste (when created can be large size)
+linked lists do not waste memory
+
+arrays (sequential access is faster) - stored in contiguous memory
+sequential access is slow (not stored in contiguous memory)
