@@ -1,0 +1,66 @@
+CREATE DATABASE databasename;
+
+CREATE TABLE Persons (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
+);
+
+CREATE TABLE IF NOT EXISTS mytable (
+    column DataType TableConstraint DEFAULT default_value,
+    another_column DataType TableConstraint DEFAULT default_value,
+    …
+);
+
+INT, DECIMAL(length, digitsAfter), FLOAT, numeric, bigint
+- floats (8 bytes) are approximate, avoid using in where clauses. they take up less memory
+- int up to 2.147 trillion (4 bytes). numeric (same as decimal) - 5-17 bytes
+DATE, TIME, DATETIME, TIMESTAMP
+CHAR, VARCHAR - char is fixed length, varchar is variable length
+- if all entries are the same better performance with char
+TEXT (65,500 characters), MEDIUMTEXT(16.7 mil), LONGTEXT(4.3 bil)
+BOOLEAN (MySql), BIT (Other SQL)
+
+Complete SELECT query
+SELECT DISTINCT column, AGG_FUNC(column_or_expression), …
+FROM mytable
+    JOIN another_table
+      ON mytable.column = another_table.column
+    WHERE constraint_expression
+    GROUP BY column
+    HAVING constraint_expression
+    ORDER BY column ASC/DESC
+    LIMIT count OFFSET COUNT;
+
+inserting data...
+INSERT INTO my_table
+VALUES (col1val, col2val, col3val, ...)
+(col1val, col2val, col3val)
+
+or if only inserting into specific columns
+INSERT INTO my_table
+(col1, col2)
+VALUES (col1val, col2val)
+(col1val, col2val)
+
+* it's recommended to run select queries on data before updating/deleting
+to ensure that you are modifying the correct rows
+
+Update statement with values
+UPDATE mytable
+SET column = value_or_expr,
+    other_column = another_value_or_expr,
+    …
+WHERE condition;
+
+Delete statement with condition
+DELETE FROM mytable
+WHERE condition;
+
+ALTER TABLE table_name ADD COLUMN new_column_name TYPE;
+ALTER TABLE table_name DROP COLUMN column_name;
+ALTER TABLE table_name RENAME COLUMN column_name TO new_column_name;
+ALTER TABLE table_name ALTER COLUMN column_name [SET DEFAULT value | DROP DEFAULT]
+ALTER TABLE table_name RENAME TO new_table_name;

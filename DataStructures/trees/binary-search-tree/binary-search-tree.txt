@@ -1,0 +1,14 @@
+each node in a binary search tree has at most two child nodes
+binary search trees are ordered:
+each left child node is <= parent node
+each right child node >= parent node
+
+because they use the principle of binary search, on average each operation is able
+to skip about half the tree
+
+All ASID operations are log(n)
+this is much better than the linear time complexity operations of array
+but slower than the corresponding operations in a hash table
+
+one of the weaknesses of a bst is that it can become imbalanced
+for example adding a sorted array to bst
