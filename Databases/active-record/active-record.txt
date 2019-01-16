@@ -1,0 +1,39 @@
+CREATE
+
+user = User.create(name: "David", occupation: "Code Artist")
+
+user = User.new
+user.name = "David"
+user.occupation = "Code Artist"
+user.save
+
+READ
+
+users = User.all
+user = User.first
+david = user.find_by(name: 'David')
+users = User.where(name: 'David', occupationg: 'Artist').order(created_at: :desc)
+
+UPDATE
+
+user = User.find_by(name: 'David')
+user.name = 'Dave'
+user.save
+
+user = User.find_by(name: 'David')
+user.update(name: 'Dave')
+
+# Update all customers with the given attributes
+Customer.update_all wants_email: true
+
+# Update all books with 'Rails' in their title
+Book.where('title LIKE ?', '%Rails%').update_all(author: 'David')
+
+DELETE
+
+user = User.find_by(name: 'David')
+user.destroy
+
+joins table
+Author.joins("INNER JOIN posts ON posts.author_id = authors.id
+AND posts.published = 't'")

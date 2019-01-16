@@ -1,0 +1,30 @@
+class CreateProducts < ActiveRecord::Migration[5.0]
+  def change
+    create_table :products do |t|
+      t.string :name
+      t.text :description
+
+      t.timestamps
+    end
+  end
+end
+
+You can use the ActiveRecord::Base.table_name= method to specify the table name
+that should be used:
+
+class Product < ApplicationRecord
+  self.table_name = "my_products"
+end
+
+add_column
+remove_column
+
+joins table
+class AssignmentsSecurityUsers < ActiveRecord::Migration
+  def change
+    create_table :assignments_security_users, :id => false do |t|
+      t.integer :assignment_id
+      t.integer :security_user_id
+    end
+  end
+end

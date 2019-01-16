@@ -1,0 +1,16 @@
+class Category < ApplicationRecord
+  has_many :articles
+end
+
+class Article < ApplicationRecord
+  belongs_to :category
+  has_many :comments
+  has_many :tags
+end
+
+Now we can juse Category.joins(:articles)
+
+Eager loading is the mechanism for loading the associated records of the objects
+returned by Model.find using as few queries as possible.
+
+clients = Client.includes(:address).limit(10)
