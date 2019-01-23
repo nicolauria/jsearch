@@ -1,0 +1,14 @@
+recursion uses more memory but is sometimes clearer to read and uses less code
+for example, working with binary trees
+
+in java, c, and python recursion is fairly expensive because it requires the
+allocation of new stack frames.
+
+functional programming = building pure functions and avoiding shared state
+- code tends to be more concise, more predictable, and easier to test
+
+Pure functions are functions that accept an input and returns a value without
+modifying any data outside its scope (Side Effects)
+
+using looping constructs in functional programming can be expensive because of
+the interaction between the mutator and the garbage collector

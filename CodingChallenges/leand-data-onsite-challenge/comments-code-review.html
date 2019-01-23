@@ -1,0 +1,174 @@
+<!--
+  Front-End Interview / Existing Reddit Exercise - PART 1
+
+  Code Review
+  TODO: conduct a brief code review of the existing code (before your edits)
+        would you sign-off on the code or would you reject and request edits?
+        if edits, what changes would you request? Write these comments within the code
+-->
+<html>
+  <head>
+    <style>
+      .reply-link {
+        color: #1360e9;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      .comment {
+        border: 1px solid gainsboro;
+        margin: 15px 5px 5px 20px;
+        padding: 10px 5px 10px 10px;
+      }
+
+      .reply-box {
+        margin: 10px 0px;
+        padding: 5px;
+        width: 100%;
+        display: block;
+      }
+
+      button {
+        margin-right: 10px;
+      }
+    </style>
+    <script>
+        class Post {
+          constructor () {
+            this.post = new Comment({guid: 0, content: 'We did it, Reddit!', post: this});
+            this.comments = [this.post];
+          }
+
+          render () {
+            document.getElementById('post').appendChild(this.post.render());
+          }
+
+          registerComment (content) {
+            const newComment = new Comment({
+              guid: this.comments.length,
+              content: content + ' (' + this.comments.length + ')',
+              post: this
+            });
+            this.comments.push(newComment);
+            return newComment;
+          }
+        }
+
+        class Comment {
+
+          /**
+           * Simply get props and create the Comment.
+           */
+          constructor (props) {
+            this.guid = props.guid;
+            this.children = [];
+            this.content = props.content;
+            this.post = props.post;
+          }
+
+          /**
+           * Create the entire DOM element for the comment.
+           */
+          render () {
+            // container
+            const container = document.createElement('div');
+            container.setAttribute('class', 'comment');
+            container.setAttribute('id', 'comment-id-' + this.guid);
+            container.setAttribute('data-comment-id', this.guid);
+
+            // content
+            const content = document.createElement('div');
+            content.setAttribute('class', 'content');
+            content.innerText = this.content;
+            container.appendChild(content);
+
+            // controls
+            const controls = document.createElement('div');
+            const replyLink = document.createElement('a');
+            replyLink.setAttribute('class', 'reply-link');
+            replyLink.addEventListener('click', (event) => {
+              const comment = event.target.closest('.comment');
+              comment.querySelector('.reply-container').style.display = 'block';
+              comment.querySelector('.reply-container > textarea').focus();
+            });
+            replyLink.innerText = 'reply';
+            controls.appendChild(replyLink);
+            container.appendChild(controls);
+
+            // comment box
+            const replyContainer = document.createElement('div');
+            replyContainer.setAttribute('class', 'reply-container');
+            replyContainer.style.display = 'none';
+            const box = document.createElement('textarea');
+            box.setAttribute('class', 'reply-box');
+            const submit = document.createElement('button');
+            submit.innerText = 'Submit';
+            submit.addEventListener('click', (event) => {
+              const textArea = event.target.closest('.comment').querySelector('.reply-container > textarea');
+              if (textArea.value) {
+                // make and render new comment
+                this.children.push(this.post.registerComment(
+                  textArea.value, //content
+                ));
+                this.rerenderChildren();
+
+                // hide replyContainer
+                replyContainer.style.display = 'none';
+                textArea.value = '';
+              }
+
+            });
+            const cancel = document.createElement('button');
+            cancel.innerText = 'Cancel';
+            cancel.addEventListener('click', (event) => {
+              const comment = event.target.closest('.comment');
+              comment.querySelector('.reply-container > textarea').value = ''
+              replyContainer.style.display = 'none';
+            });
+            replyContainer.appendChild(box);
+            replyContainer.appendChild(submit);
+            replyContainer.appendChild(cancel);
+            container.appendChild(replyContainer);
+
+            // comments
+            const thread = document.createElement('div');
+            thread.setAttribute('class', 'thread');
+            this.renderChildren().forEach((child) => {
+              thread.appendChild(child);
+            });
+            container.appendChild(thread);
+
+            // return the DOM element
+            return container;
+          }
+
+          /**
+           * Get list of DOM elements for children
+           */
+          renderChildren () {
+            const childrenDOMs = [];
+            this.children.forEach((child) => {
+              childrenDOMs.push(child.render());
+            });
+            return childrenDOMs;
+          }
+
+          rerenderChildren () {
+            const thread =
+              document.querySelector('#comment-id-' + this.guid + ' > .thread');
+
+            thread.innerHTML = '';
+            this.renderChildren().forEach((child) => {
+              thread.appendChild(child);
+            });
+          }
+        }
+      </script>
+  </head>
+  <body>
+    <div id="post"></div>
+    <script>
+      new Post().render();
+    </script>
+  </body>
+</html>

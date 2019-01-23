@@ -1,0 +1,23 @@
+Hello:
+
+Hope your 2019 is off to a great start.
+
+Thanks for your interest (via Angel.co) in the Software Engineer position at Roo.  We're excited to find someone to join our team!
+
+As a first step - we'd like to provide you a simple coding challenge which reflects some of the work you'd do at Roo.  See below for the information.
+
+Assuming you'd like to proceed, please email me back your work/info no later than next Monday, Jan 21, 5pm PT (the sooner the better too!) 
+
+Good luck and thanks again!
+
+*******************
+Build a simple react based project using both React JS and React Native, that is deployed as both web and mobile (iOS or Android) apps, and that includes your choice of any three elements below.
+- buttons that move a user back/forward through multiple pages/views
+- data persistence between moving through pages/views
+- pull data from a RESTful API (your choice of api)
+- create a view with an input form (think registration form) that includes the following UI elements, text input / buttons / toggle switches / drop-downs 
+- implement a REACT library (does not have to be the same on web and mobile)
+- implement a REACT component from the REACT community
+- implement a 3rd party SDK of your choosing (maps, audio call, etc)
+
+

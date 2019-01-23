@@ -1,0 +1,2 @@
+rest stands for representational state transfer
+it is a set of design principles for network communication

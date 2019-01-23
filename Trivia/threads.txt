@@ -1,0 +1,6 @@
+initially computers were only able to handle once process at a time
+they executed instructions in the order they were received
+
+with threading, a processor can accept and execute multiple processes
+at the same time. we can give priority to specific threads so that they
+are handled first.
