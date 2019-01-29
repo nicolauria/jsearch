@@ -1,0 +1,2 @@
+#id.class specifies that the element must have both the id and class
+#id .class element must only have .class and be child of #id
