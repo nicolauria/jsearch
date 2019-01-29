@@ -1,2 +1,11 @@
 #id.class specifies that the element must have both the id and class
 #id .class element must only have .class and be child of #id
+
+div > p
+select all <p> elements where parent is a <div>
+
+div + p
+selects all <p> elements that are placed immediately after a div
+
+div ~ p
+selects all <p> elements preceded by a div
