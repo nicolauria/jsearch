@@ -1,0 +1,7 @@
+binary search tree allows for in order traversal to get sorted elements
+O(n) time complexity
+
+also allows us to perform bfs and dfs
+O(n)
+
+finding closest lower and greater elements

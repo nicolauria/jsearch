@@ -1,2 +1,17 @@
 rest stands for representational state transfer
 it is a set of design principles for network communication
+roy t fielding first coined the term REST in 2000
+
+some architectural constrains of rest:
+the network must be made up of clients and servers
+one to one relationship
+
+a non-restful alternative is event based integration
+in this model each component continuously broadcasts events while listening
+for pertinent events from other components
+
+other apis aside from rest include websockets and graphql
+websockets use a tcp connection
+for continous communication using rest we would need to use polling
+polling is basically a refresh button, 98.5% of request are wasted
+- hardware intensive because we have to send back a response w/ each request

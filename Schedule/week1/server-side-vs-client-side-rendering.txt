@@ -1,0 +1,7 @@
+server side rendering means all code is parsed on server and we return html page
+this allows for faster first time page load
+better seo as search engines can more easily parse the code
+all interactions with the page once it is rendered are handled client side
+
+rendering a big application server side can be resource intensive
+there is a single bottleneck instead of each user parsing code on their machine

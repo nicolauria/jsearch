@@ -1,0 +1,20 @@
+binary search trees do range look ups efficiently
+we can find corresponding nodes that are within a certain range
+
+they also can return sorted items in O(n)
+using in order traversal
+
+hash table has constant O(1) Search, Insertion, and Deletion
+
+the time complexity of a binary search tree is actually its upper bound
+while the time complexity for a hash table is its amortized value
+
+an array is really just a collection of values that are stored sequentially in memory
+once the array is created, all we need is a pointer to its index location
+lets say 800, then every element after that is just (8 * i)
+it consumes 8 bytes of space or 64 bits of memory
+
+an associate array, or hash table is really just a wrapper for an array
+when we add an element, a hashing function is used to generate an integer
+that integer points to the physical location in memory that has that value
+now instead of looking something up by its index we can use our hashed value

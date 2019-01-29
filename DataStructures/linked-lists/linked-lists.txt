@@ -7,7 +7,7 @@ to account for this modern computers use a cache
 (the cache is much smaller than ram)
 
 because linked-lists do not store nodes in sequential memory, traversing a linked
-list can actually be longer than an array dues to cache miss.
+list can actually be longer than an array due to cache miss.
 
 when we insert or delete in an array, all items have to be moved
 (reallocated in memory)
