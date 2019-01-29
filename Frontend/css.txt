@@ -9,3 +9,21 @@ selects all <p> elements that are placed immediately after a div
 
 div ~ p
 selects all <p> elements preceded by a div
+
+[attribute]
+select all instances of that attribute
+
+input[type=text]
+select only instances of that tag w/ attribute and specific type
+
+:target
+used to style the current active target element
+- for example when linking to div on a page
+
+:hover
+
+:active
+link is being clicked
+
+:focus
+selects the input element which has focus
