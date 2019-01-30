@@ -1,0 +1,21 @@
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+#autocomplete-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.country-result {
+  border: 1px solid #999;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.country-result:hover {
+  background: #f1f1f1;
+}
