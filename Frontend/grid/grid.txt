@@ -5,3 +5,11 @@ grid-template-rows: 1fr 1fr 1fr;
 grid-template-areas: "a b c"
                      "d e f"
                      "g h i";
+
+.item1 {
+ grid-column-start: 1;
+ grid-column-end: 3;
+}
+- takes up a and b
+
+if we don't specify start/end they take up 1x1 space;

@@ -7,7 +7,6 @@ function autocomplete(inp, arr) {
 
   inp.addEventListener("input", function(e) {
     clearList();
-    console.log(this.value);
     if (!this.value) return false;
     const userInput = this.value;
 
